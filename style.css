@@ -1,0 +1,39 @@
+/* ページ全体の設定 */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* ゲーム盤の設定 (3x3グリッドで配置) */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* マス目（ボタン）の設定 */
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* ゲームの状態表示エリア */
+#status {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* リセットボタン */
+#reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
